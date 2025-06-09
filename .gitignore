@@ -1,0 +1,29 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore override files as they are usually local
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform working directory
+.terraform/
+
+# Terraform lock file (only if you prefer not to commit it)
+.terraform.lock.hcl
+
+# macOS / Linux system files
+.DS_Store
+*.swp
+
