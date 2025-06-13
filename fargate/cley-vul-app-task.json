@@ -1,0 +1,49 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:eu-west-3:016246143337:task-definition/cley-task:5",
+    "containerDefinitions": [
+        {
+            "name": "cley-container",
+            "image": "chrisley75/cley-vul-app:1.0.0",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 5000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "family": "cley-task",
+    "executionRoleArn": "arn:aws:iam::016246143337:role/ecsTaskExecutionRole-Cley-vulapp",
+    "networkMode": "awsvpc",
+    "revision": 5,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2025-06-09T09:29:40.910Z",
+    "registeredBy": "arn:aws:iam::016246143337:user/christopher",
+    "tags": []
+}
